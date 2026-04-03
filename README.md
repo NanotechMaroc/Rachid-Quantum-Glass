@@ -26,9 +26,13 @@ This repository and its underlying algorithms (Physics Engine & Financial ROI Lo
 • No Commercial Use: Reproduction or distribution without a signed legal license is strictly prohibited.
 • Partnerships: For investment inquiries or licensing opportunities, please contact via GitHub Private Inquiries.
 ---
-### 📊 Performance Analysis (2026 Simulation)
+### Performance Analysis (2026 Simulation)
 The simulation visualizes a high-efficiency energy curve:
 - **Peak Output:** Reaching **2833 Watts** during solar noon in Ouarzazate.
 - **Thermal Resilience:** Operates effectively at **55°C** with optimized cooling algorithms.
 - **Energy Conversion:** Sustained high performance throughout 12 hours of daylight.
 ---
+## Contact for Investment & Licensing
+For high-level technical inquiries or partnership proposals regarding **NanotechMaroc**, please contact the Lead Innovator:
+- **GitHub:** [Private Message]
+- **Status:** Open for Strategic Partnerships (Tier 1 Tech Companies only).
