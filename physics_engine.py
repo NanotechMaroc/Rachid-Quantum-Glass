@@ -31,3 +31,26 @@ def calculate_refraction(angle_in_degrees, n_glass=1.5):
 angle_in = 45
 angle_out = calculate_refraction(angle_in)
 print(f"الشعاع سقط بزاوية {angle_in} وانكسر داخل الزجاج بزاوية {angle_out:.2f}")
+import random
+
+# خوارزمية احتمالية الاصطدام بالنقاط النانوية
+def quantum_hit_simulation(photons_count):
+    hits = 0
+    trapped_energy = 0
+    
+    for i in range(photons_count):
+        # احتمال 70% أن يصطدم الفوتون بنقطة نانوية (كفاءة عالية)
+        probability = random.random()
+        if probability < 0.70:
+            hits += 1
+            trapped_energy += 1.24 # طاقة افتراضية بالـ eV
+            
+    return hits, trapped_energy
+
+# محاكاة سقوط 1000 فوتون شمس على زجاج رشيد
+total_photons = 1000
+captured, total_energy = quantum_hit_simulation(total_photons)
+
+print(f"--- نتائج المحاكاة الكمومية ---")
+print(f"تم اصطياد {captured} فوتون من أصل {total_photons}")
+print(f"إجمالي الطاقة المحصودة: {total_energy:.2f} وحدة طاقة")
