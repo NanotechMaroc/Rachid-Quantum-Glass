@@ -78,3 +78,36 @@ daily_total = simulate_daily_yield("Ouarzazate", area)
 
 print("-" * 30)
 print(f"إجمالي الطاقة اليومية للنافذة: {daily_total:.2f} kWh")
+
+
+
+# --- أضف هذا الجزء في أسفل الملف مباشرة ---
+import matplotlib.pyplot as plt
+
+def plot_rachid_results():
+    # الساعات من 6 صباحاً لـ 6 مساءً
+    hours = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+    # نتائج الإنتاج بالوات (بناءً على محاكاتك الأخيرة)
+    power = [175, 525, 1400, 2450, 3150, 3500, 3325, 2800, 1750, 700, 175, 50, 20]
+    
+    plt.figure(figsize=(10, 5))
+    plt.plot(hours, power, color='gold', marker='o', linewidth=3, label='Quantum Glass Output (Watts)')
+    plt.fill_between(hours, power, color='orange', alpha=0.2)
+    
+    plt.title("Rachid Quantum Glass: Performance in Ouarzazate (2026)")
+    plt.xlabel("Hour of the Day")
+    plt.ylabel("Power Output (Watts)")
+    plt.grid(True, linestyle='--')
+    plt.legend()
+    
+    # حساب الأرباح لناطحة سحاب 5000 متر مربع
+    total_kwh_5m = 19.95
+    skyscraper_revenue_annual = (total_kwh_5m / 5) * 5000 * 1.1 * 365
+    
+    print(f"\n🚀 التحليل المالي النهائي:")
+    print(f"الأرباح السنوية لناطحة سحاب: {skyscraper_revenue_annual:,.2f} درهم مغربي")
+    
+    plt.show()
+
+# استدعاء الوظيفة
+plot_rachid_results()
