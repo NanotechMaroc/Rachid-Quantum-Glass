@@ -25,3 +25,10 @@ Copyright (c) 2026 NanotechMaroc (Rachid). All Rights Reserved.
 This repository and its underlying algorithms (Physics Engine & Financial ROI Logic) are the Exclusive Intellectual Property of the author.
 • No Commercial Use: Reproduction or distribution without a signed legal license is strictly prohibited.
 • Partnerships: For investment inquiries or licensing opportunities, please contact via GitHub Private Inquiries.
+---
+### 📊 Performance Analysis (2026 Simulation)
+The simulation visualizes a high-efficiency energy curve:
+- **Peak Output:** Reaching **2833 Watts** during solar noon in Ouarzazate.
+- **Thermal Resilience:** Operates effectively at **55°C** with optimized cooling algorithms.
+- **Energy Conversion:** Sustained high performance throughout 12 hours of daylight.
+---
