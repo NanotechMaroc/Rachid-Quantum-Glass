@@ -54,3 +54,27 @@ captured, total_energy = quantum_hit_simulation(total_photons)
 print(f"--- نتائج المحاكاة الكمومية ---")
 print(f"تم اصطياد {captured} فوتون من أصل {total_photons}")
 print(f"إجمالي الطاقة المحصودة: {total_energy:.2f} وحدة طاقة")
+# محاكي الطاقة الشمسية لمدينة ورزازات - مشروع رشيد 2026
+def simulate_daily_yield(city_name, glass_area_m2):
+    # شدة الإشعاع التقريبية لكل ساعة (من 6 صباحاً لـ 6 مساءً)
+    solar_intensity_w_m2 = [50, 150, 400, 700, 900, 1000, 950, 800, 500, 200, 50]
+    efficiency = 0.70  # كفاءة النقاط الكمومية (خوارزمية رشيد)
+    
+    total_energy_kwh = 0
+    print(f"--- تقرير الطاقة لمدينة {city_name} ---")
+    print("الساعة | الطاقة المولدة (وات)")
+    print("-" * 30)
+    
+    for hour, intensity in enumerate(solar_intensity_w_m2, 6):
+        generated = intensity * glass_area_m2 * efficiency
+        total_energy_kwh += (generated / 1000) # تحويل لـ كيلوواط ساعة
+        print(f"{hour:02d}:00 | {generated:.1f} W")
+        
+    return total_energy_kwh
+
+# تطبيق المحاكاة على نافذة مساحتها 2 متر مربع في ورزازات
+area = 2 
+daily_total = simulate_daily_yield("Ouarzazate", area)
+
+print("-" * 30)
+print(f"إجمالي الطاقة اليومية للنافذة: {daily_total:.2f} kWh")
