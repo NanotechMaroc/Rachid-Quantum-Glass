@@ -111,3 +111,30 @@ def plot_rachid_results():
 
 # استدعاء الوظيفة
 plot_rachid_results()
+
+# --- 🧪 الجزء المطور: نظام الاستدامة والتخزين (Rachid Pro-Module 2026) ---
+
+def run_advanced_simulation():
+    print("\n" + "="*50)
+    print("🚀 نضام محاكاة NanotechMaroc الشامل")
+    print("="*50)
+    
+    # 1. محاكاة الاستدامة لـ 20 سنة
+    initial_eff = 0.70
+    degradation = 0.006
+    eff_20_years = initial_eff * ((1 - degradation) ** 20)
+    print(f"📅 الكفاءة بعد 20 سنة: {eff_20_years*100:.2f}%")
+    
+    # 2. محاكاة تأثير الغبار مع طلاء النانو
+    soiling_loss_with_nano = 0.03 # فقدان 3% فقط بفضل التنظيف الذاتي
+    print(f"🌪️ كفاءة الأداء في بيئة صحراوية: { (1-soiling_loss_with_nano)*100 } %")
+    
+    # 3. حساب سعة التخزين المطلوبة (البطاريات)
+    daily_kwh = 19.95 # الناتج من المحاكاة السابقة
+    battery_needed = daily_kwh * 1.2 # سعة إضافية للأمان
+    print(f"🔋 سعة بطاريات الليثيوم المطلوبة: {battery_needed:.2f} kWh")
+    
+    print("="*50)
+
+# استدعاء المحاكاة الشاملة
+run_advanced_simulation()
